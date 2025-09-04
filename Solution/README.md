@@ -40,9 +40,9 @@ This section provides the solutions to the assignment questions based on the ana
    **From 1NF to 2NF:**  
    In the 1NF table, there is a partial dependency: VisitNo → VisitDate, PatNo. To resolve this, decompose the table as follows:  
   
-![Playzy Database Table](https://github.com/ventura658/Playzy-Payment-App-and-Insurance-Database-design/blob/339f269c0a4b230628f5c4d4312912948b190290/Playzy-Payment-App/Ex1-1.png)
+![VisitDiagnosis](https://github.com/ventura658/Database-Normalization-Assignment/blob/95f6e1cbe1f9f15da77fe5babceab7acce305eb2/Solution/VisitDiagnosis.png)
 
-![Playzy Database Table](https://github.com/ventura658/Playzy-Payment-App-and-Insurance-Database-design/blob/339f269c0a4b230628f5c4d4312912948b190290/Playzy-Payment-App/Ex1-1.png)
+![VisitInfo](https://github.com/ventura658/Database-Normalization-Assignment/blob/95f6e1cbe1f9f15da77fe5babceab7acce305eb2/Solution/VisitInfo.png)
 
    The resulting tables have no partial dependencies.  
 
