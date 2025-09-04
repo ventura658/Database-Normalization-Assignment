@@ -10,7 +10,7 @@ This section provides the solutions to the assignment questions based on the ana
      For example, since PatNo → PatAge, PatCity, the empty fields in PatAge and PatCity can be filled using the corresponding records.  
      Additionally, since VisitNo → PatNo, VisitDate, PatAge, PatCity, we can infer that each VisitNo is unique and arbitrarily fill in the missing entries.  
 
-![Non 1NF to 1NF-1](https://github.com/ventura658/Database-Normalization-Assignment/blob/072838b53a14488b11be33763daddde9a7650050/Solution/Ex1.png)
+![Non 1NF to 1NF-1](https://github.com/ventura658/Database-Normalization-Assignment/blob/221abf28080c3f5b2a8922a918c7c6e227edcc3b/Solution/Ex2-1.png)
 
    - Next, identify one or more attributes to use as a key for the non-normalized table.  
      Given the functional dependencies:  
@@ -27,7 +27,7 @@ This section provides the solutions to the assignment questions based on the ana
 
    - Identify repeating fields and move them to a new table along with a copy of the relevant key.
      
-![Non 1NF to 1NF-2](https://github.com/ventura658/Database-Normalization-Assignment/blob/072838b53a14488b11be33763daddde9a7650050/Solution/Ex2.png)
+![Non 1NF to 1NF-2](https://github.com/ventura658/Database-Normalization-Assignment/blob/221abf28080c3f5b2a8922a918c7c6e227edcc3b/Solution/Ex2-2.png)
 
 ![PatInfo](https://github.com/ventura658/Database-Normalization-Assignment/blob/072838b53a14488b11be33763daddde9a7650050/Solution/PatInfo.png)
 
