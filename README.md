@@ -6,7 +6,7 @@
    The original table represents patient visit data and includes the following columns: VisitNo, VisitDate, PatNo, PatAge, PatCity, ProvNo, ProvSpecialty, and Diagnosis. The functional dependencies are provided for normalization.
 
    ## Original Table
-   Below is the provided table in a readable format. The full data is also available in the CSV file: [BigPatientTable.csv](patient_table.csv).
+   Below is the provided table in a readable format. The full data is also available in the CSV file: [BigPatientTable.csv](https://github.com/ventura658/Database-Normalization-Assignment/blob/239a3b4be83c1a56a58bd157da04f7af4616bbb5/BigPatientTable.csv).
 
   [BigPatientTable.png](patient_table.csv).
 
