@@ -8,7 +8,7 @@
    ## Original Table
    Below is the provided table in a readable format. The full data is also available in the CSV file: [BigPatientTable.csv](https://github.com/ventura658/Database-Normalization-Assignment/blob/239a3b4be83c1a56a58bd157da04f7af4616bbb5/BigPatientTable.csv).
 
-  [BigPatientTable.png](https://github.com/ventura658/Database-Normalization-Assignment/blob/239a3b4be83c1a56a58bd157da04f7af4616bbb5/BigPatientTable.png)
+![BigPatientTable.png](https://github.com/ventura658/Database-Normalization-Assignment/blob/239a3b4be83c1a56a58bd157da04f7af4616bbb5/BigPatientTable.png)
 
    ## Assignment Questions
    This assignment consists of four questions based on the table above:
