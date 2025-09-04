@@ -10,6 +10,8 @@ This section provides the solutions to the assignment questions based on the ana
      For example, since PatNo → PatAge, PatCity, the empty fields in PatAge and PatCity can be filled using the corresponding records.  
      Additionally, since VisitNo → PatNo, VisitDate, PatAge, PatCity, we can infer that each VisitNo is unique and arbitrarily fill in the missing entries.  
 
+![Non 1NF to 1NF-1](https://github.com/ventura658/Database-Normalization-Assignment/blob/072838b53a14488b11be33763daddde9a7650050/Solution/Ex1.png)
+
    - Next, identify one or more attributes to use as a key for the non-normalized table.  
      Given the functional dependencies:  
      - ProvNo → ProvSpecialty  
@@ -23,12 +25,24 @@ This section provides the solutions to the assignment questions based on the ana
 
      Therefore, we define a composite key: {VisitNo, ProvNo}.  
 
-   - Identify repeating fields and move them to a new table along with a copy of the relevant key.  
-     After this, the original table is converted to 1NF as follows: [Describe or link to the updated table if available].  
+   - Identify repeating fields and move them to a new table along with a copy of the relevant key.
+     
+![Non 1NF to 1NF-2](https://github.com/ventura658/Database-Normalization-Assignment/blob/072838b53a14488b11be33763daddde9a7650050/Solution/Ex2.png)
 
+![PatInfo](https://github.com/ventura658/Database-Normalization-Assignment/blob/072838b53a14488b11be33763daddde9a7650050/Solution/PatInfo.png)
+
+![ProvInfo](https://github.com/ventura658/Database-Normalization-Assignment/blob/072838b53a14488b11be33763daddde9a7650050/Solution/ProvInfo.png)
+
+     After this, the original table is converted to 1NF as follows:
+     
+![1NF](https://github.com/ventura658/Database-Normalization-Assignment/blob/072838b53a14488b11be33763daddde9a7650050/Solution/1NF.png)
+  
    **From 1NF to 2NF:**  
    In the 1NF table, there is a partial dependency: VisitNo → VisitDate, PatNo. To resolve this, decompose the table as follows:  
-   - New tables: [List the decomposed tables based on your analysis, e.g., one for VisitInfo and another for related attributes].  
+  
+![Playzy Database Table](https://github.com/ventura658/Playzy-Payment-App-and-Insurance-Database-design/blob/339f269c0a4b230628f5c4d4312912948b190290/Playzy-Payment-App/Ex1-1.png)
+
+![Playzy Database Table](https://github.com/ventura658/Playzy-Payment-App-and-Insurance-Database-design/blob/339f269c0a4b230628f5c4d4312912948b190290/Playzy-Payment-App/Ex1-1.png)
 
    The resulting tables have no partial dependencies.  
 
@@ -38,36 +52,29 @@ This section provides the solutions to the assignment questions based on the ana
 3. **Question 3: Normalize the table using MySQL Workbench and save the new design.**  
    - First, determine the primary key: Based on the functional dependencies, use {VisitNo, ProvNo} as the primary key.  
 
+![Primary Key](https://github.com/ventura658/Database-Normalization-Assignment/blob/072838b53a14488b11be33763daddde9a7650050/Solution/Ex3-1.png)
+
    - Handle partial dependencies:  
      VisitNo → PatNo, VisitDate, PatAge, PatCity and ProvNo → ProvSpecialty.  
 
+![partial dependencies](https://github.com/ventura658/Database-Normalization-Assignment/blob/072838b53a14488b11be33763daddde9a7650050/Solution/Ex3-1.png)
+
    - Re-check for partial dependencies:  
-     In the resulting VisitInfo table, there is a partial dependency PatNo → PatAge, PatCity.  
+     In the resulting VisitInfo table, there is a partial dependency PatNo → PatAge, PatCity.
+
+![partial dependencies-2](https://github.com/ventura658/Database-Normalization-Assignment/blob/072838b53a14488b11be33763daddde9a7650050/Solution/Ex3-2.png)
 
    - Re-check for partial or transitive dependencies:  
      In the final tables, there are no partial or transitive dependencies, so the schema is in 3NF.  
 
+![partial dependencies-3](https://github.com/ventura658/Database-Normalization-Assignment/blob/072838b53a14488b11be33763daddde9a7650050/Solution/Ex3-3.png)
+
    Use MySQL Workbench to create the normalized schema:  
-   - Add entities for the new tables based on the 3NF design.  
-   - Define relationships and export as [normalized_schema.mwb](normalized_schema.mwb) and [normalized_schema.sql](normalized_schema.sql).
+[Ex2.mwb](https://github.com/ventura658/Database-Normalization-Assignment/blob/87b53f597ae26698f1c52beb64dadc0a4f99d18d/Solution/Ex2.mwb)
+ and
+[Ex2.sql](https://github.com/ventura658/Database-Normalization-Assignment/blob/87b53f597ae26698f1c52beb64dadc0a4f99d18d/Solution/Ex2.sql)
 
 4. **Question 4: Create an Excel file for the normalized tables.**  
-   Create an Excel file ([normalized_tables.xlsx](normalized_tables.xlsx)) with separate sheets for each normalized table. Distribute the original data across these sheets, ensuring all dependencies are respected. For example:  
-   - One sheet for "Patients" with PatNo, PatAge, PatCity.  
-   - One sheet for "Visits" with VisitNo, VisitDate, etc.  
-   Upload the file to the repository for reference.
-
-## Files in This Repository
-- **patient_table.csv**: The original table data.
-- **normalized_schema.mwb**: MySQL Workbench file for the normalized design.
-- **normalized_schema.sql**: SQL script for the normalized database.
-- **normalized_tables.xlsx**: Excel file showing the normalized tables and distributed data.
-- **(Optional)**: Add an image of your ERD diagram, e.g., ![ERD Diagram](images/erd_diagram.png). Upload it to an "images" folder.
-
-## Supplementary Information
-- **Author**: [Your name or team name, e.g., "Your Username"]
-- **Date**: [Add the current date, e.g., "October 2023"]
-- **Next Steps**: Update this README with any additional files or diagrams as you finalize your work. Commit changes regularly for version control.
-- **Notes**: This assignment focuses on database normalization techniques. If you have questions or need to discuss the solutions, open an issue in this repository.
-
-For collaboration or feedback, feel free to open an issue!
+   Create an Excel file  with separate sheets for each normalized table. Distribute the original
+ data across these sheets, ensuring all dependencies are respected.
+[BigPatientDatabase](https://github.com/ventura658/Database-Normalization-Assignment/blob/87b53f597ae26698f1c52beb64dadc0a4f99d18d/Solution/BigPatientDatabase.xls)
